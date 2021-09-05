@@ -6,15 +6,14 @@ namespace Csharpbasic
     {
         static void Main(string[] args)
         {
-            int dividend = 50, divisor = 8;
-
-            int quotient = dividend / divisor;
-            int remainder = dividend % divisor;
-
-            Console.WriteLine("Dividend:{0} Divisor:{1}", dividend, divisor);
-            Console.WriteLine("Quotient = " + quotient);
-            Console.WriteLine("Remainder = " + remainder);
-            Console.ReadLine();
+            int n;
+                Console.Write("Enter no", n);
+            if (n % 2 == 0)
+            
+                Console.Write("No is Even");
+            
+            else
+                Console.Write("No is odd");
         }
         
     }
