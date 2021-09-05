@@ -6,15 +6,44 @@ namespace Csharpbasic
     {
         static void Main(string[] args)
         {
-            int n;
-                Console.Write("Enter no", n);
-            if (n % 2 == 0)
+            int first, second, third;
+
             
-                Console.Write("No is Even");
-            
+            Console.WriteLine("Enter the first number : ");
+            first = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the second number : ");
+            second = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the third number : ");
+            third = int.Parse(Console.ReadLine());
+
+           
+            if (first > second)
+            {
+                
+                if (first > third)
+                {
+                    Console.WriteLine("largest number : " + first);
+                }
+                else
+                {
+                    Console.WriteLine("largest number : " + third);
+                }
+            }
             else
-                Console.Write("No is odd");
+            {
+                if (second > third)
+                {
+                    Console.WriteLine("largest number : " + second);
+                }
+                else
+                {
+                    Console.WriteLine("largest number : " + third);
+                }
+            }
+
         }
-        
+
     }
 }
