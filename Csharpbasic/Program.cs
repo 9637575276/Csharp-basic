@@ -4,44 +4,21 @@ namespace Csharpbasic
 {
     class Program
     {
+        public Program()
+        {
+            int num;
+            int result = 1;
+            num = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= num; i++)
+            {
+                result = 2 * i;
+            }
+            Console.WriteLine(result);
+        }
+
         static void Main(string[] args)
         {
-            int first, second, third;
-
-            
-            Console.WriteLine("Enter the first number : ");
-            first = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter the second number : ");
-            second = int.Parse(Console.ReadLine());
-
-            Console.WriteLine("Enter the third number : ");
-            third = int.Parse(Console.ReadLine());
-
-           
-            if (first > second)
-            {
-                
-                if (first > third)
-                {
-                    Console.WriteLine("largest number : " + first);
-                }
-                else
-                {
-                    Console.WriteLine("largest number : " + third);
-                }
-            }
-            else
-            {
-                if (second > third)
-                {
-                    Console.WriteLine("largest number : " + second);
-                }
-                else
-                {
-                    Console.WriteLine("largest number : " + third);
-                }
-            }
+            Program a = new Program();
 
         }
 
