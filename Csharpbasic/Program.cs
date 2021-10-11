@@ -4,22 +4,20 @@ namespace Csharpbasic
 {
     class Program
     {
-        public static void Harmonic( int num )
+        public static void swap(int num1, int num2)
         {
-            
-            double result = 0;
-            
-            for (float i= 1; i <= num; i++)
-            {
-                result += 1/  i  ;
-            }
-            Console.WriteLine(result);
-        }
+            int num3 = 0;
+            Console.WriteLine($"Numbers before swapping are num1= {num1}and num2={num2}");
+            num3 = num1;
+            num1 = num2;
+            num2 = num1;
+            Console.WriteLine($"Numbers after swapping are num1={num1}and num2={num2}");
+        } 
 
         static void Main(string[] args)
         {
 
-            Program.Harmonic(4);
+            Program.swap(5,7);
 
         }
 
